@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+a {
+  color: #5FBFBF;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #1DA302;
+}
+
+
+/* HEADER NAV */
+header {
+  position: fixed;
+  z-index: 3;
+  background-color: rgba(255,255,255,0.8);
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 9rem;
+  padding-right: 0.5rem;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  position: relative;
+  top: 0.2rem;
+}
+
+.menu {
+  text-align: right;
+}
+
+header li {
+  display: inline-block;
+  padding: 0rem 0.7rem;
+}
+
+.menu.mobile {
+  display: none;
+}
+
+
+/* HEADER BG */
+#headerbg {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 40rem;
+  background-image: url("https://jooinn.com/images/nature-319.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* MAIN CONTAINER */
+.maincontainer {
+  z-index: 2;
+  position: relative;
+  top: 12rem;
+}
+
+
+/* HEADLINE SECTION */
+#headline {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+
+.headline-box {
+  background-color: #363634;
+  max-width: 29rem;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.headline-box span {
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+}
+
+.headline-box p {
+  font-size: 1.3rem;
+  padding: 1rem;
+  line-height: 1.8rem;
+}
+
+.headline-box a {
+  background-color: white;
+  padding: 0.3rem 1rem;
+}
+
+.headline-box a:hover {
+  background-color: black;
+}
+
+
+/* FEATURES SECTION */
+#feature {
+  position: relative;
+  top: 7rem;
+  width: 100%;
+  background-color: #A2CEDF;
+  padding: 3rem 0rem;
+}
+
+.feature-box {
+  width: 82%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+.feature-item {
+  background-color: #E1F3F3;
+  margin: 1rem ;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-item img {
+  max-width: 100%;
+}
+
+.feature-item h2{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.feature-item p {
+  margin: 1rem;
+}
+
+
+/* GALLERY SECTION */
+#gallery {
+  position: relative;
+  top: 3rem;
+  background-color: grey;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 0rem;
+}
+
+#gallery p {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+}
+
+.gallery-box {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.gallery-box img {
+  width: 25%;
+  margin-top: 3rem;
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 600px){
+  .logo span {
+    display: none;
+  }
+  .menu.mobile {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  #headerbg {
+    height: 35rem;
+  }
+  .maincontainer {
+    z-index: 2;
+    position: relative;
+    top: 8rem;
+  }
+  #feature {
+    top: 4rem;
+    background-color: #E1F3F3;
+    padding: 1rem 0rem;
+  }
+  .feature-box {
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  .feature-item {
+    margin: 1rem 0rem ;
+  }
+  .gallery-box img {
+    width: 33%;
+  }
+  .gallery-box img.img4 {
+    display: none;
+  }
+}
